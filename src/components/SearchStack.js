@@ -12,10 +12,6 @@ function SearchStack({emitCurrentStack}) {
   const handleChange = (evt) => {
     setSearch(evt.target.value);
   };
-  useEffect(() => {
-    emitCurrentStack('')
-  },[])
-
   const handleKeyDown = (evt) => {
     if (['Enter'].includes(evt.key)) {
       evt.preventDefault();
