@@ -16,6 +16,7 @@ const JobLists = ({content}) => {
       contract={c.contract}
       location={c.location}
       languages={c.languages}
+      tools={c.tools}
       role={c.role}
       />
       )}

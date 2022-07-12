@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 // import 
-const JobList = ({logo, company, newJob, featured, position, postedAt, contract, location, languages, role}) => {
+const JobList = ({logo, company, newJob, featured, position, postedAt, contract, location, languages, role, tools}) => {
   return (
     <div className={`list-item ${featured ? 'featured': ''}`}>
       <div className="left-side">
@@ -24,7 +24,8 @@ const JobList = ({logo, company, newJob, featured, position, postedAt, contract,
       </div>
       <div className="right-side">
         <span>{role}</span>
-        {languages.map(stack=> <span className="stack-item" key={stack}>{stack}</span>)}
+        {languages.map(stack=> <span key={stack}>{stack}</span>)}
+        {tools.map(stack=> <span key={stack}>{stack}</span>)}
       </div>
     </div>
   )
